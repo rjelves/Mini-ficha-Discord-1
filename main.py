@@ -2,7 +2,7 @@ import datetime
 import pytz as tz
 
 nombre_dias = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"]
-nombre_meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre" "noviembre", "diciembre"]
+nombre_meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre" "Noviembre", "Diciembre"]
 
 mision = input("Ingresa nombre de misión: ")
 fecha = input("Ingresa fecha en formato AAAAMMDD: ")
