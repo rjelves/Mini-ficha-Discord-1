@@ -2,7 +2,7 @@ import datetime
 import pytz as tz
 
 nombre_dias = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"]
-nombre_meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre" "Noviembre", "Diciembre"]
+nombre_meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
 
 mision = input("Ingresa nombre de misión: ")
 fecha = input("Ingresa fecha en formato AAAAMMDD: ")
@@ -30,7 +30,7 @@ minuto = int(horaUTC[1])
 fechahora = tz.utc.localize(datetime.datetime(anio, mes, dia, hora, minuto))
 
 print("\n**Lanzamiento:", mision + "**")
-print(nombre_dias[int(fechahora.strftime("%w"))], dia, "de", nombre_meses[int(fechahora.strftime("%m")) - 1], "de", anio, fechahora.strftime("%X"), "UTC")
+print(nombre_dias[int(fechahora.strftime("%w"))], dia, "de", nombre_meses[int(fechahora.strftime("%m")) - 1].lower(), "de", anio, fechahora.strftime("%X"), "UTC")
 if live != "":
   print("Transmisión en vivo: **Sí (" + live + ")**")
 else:
